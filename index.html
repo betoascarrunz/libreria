@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Descubre material escolar para todos los gustos en Librería Analy's.">
     <title>Librería</title>
 </head>
 <body>
-    <h1>Sistema de Gestión de Librería</h1>
-</body>
+    <header class="encabezado-sitio">
+        <div class="contenedor contenido-encabezado">
+            <a class="marca" href="#inicio" aria-label="Lumbre, inicio">
+                <span class="marca-simbolo">A</span>
+                <span>Analy's<span class="marca-punto">.</span></span>
+            </a>
+            <nav class="navegacion-principal" aria-label="Navegación principal">
+                <a class="activo" href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#nosotros">Nosotros</a>
+            </nav>
+            <a class="enlace-login" href="#carrito" aria-label="Iniciar sesión">
+                <span>Inicia Sesión</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="portada">
+            <div class="contenedor contenido-portada">
+                <div class="texto-portada">
+                    <p class="etiqueta">Historias que dejan huella</p>
+                    <h1>Encuentra tu material <em>escolar.</em></h1>
+                    <p class="descripcion-portada">Materiales didácticos para el aula y el estudio.</p>
+                    <a class="boton boton-principal" href="#catalogo">Explorar catálogo <span>→</span></a>
+                </div>
+                <div class="ilustracion-portada" aria-label="Ilustración de una pila de productos" role="img">
+                    <div class="sol"></div>
+                    <div class="producto producto-atras">IMPRESIONES<br>B/N - COLORES</div>
+                    <div class="producto producto-medio">MATERIAL<br>ESCOLAR</div>
+                    <div class="producto producto-frontal">REGALOS<br>RECARGAS</div>
+                    <span class="destello destello-uno">✦</span>
+                    <span class="destello destello-dos">✧</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="catalogo">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <div>
+                        <p class="etiqueta">Selección de la semana</p>
+                        <h2>Favoritos de nuestra librería</h2>
+                    </div>
+                    <a class="enlace-texto" href="#catalogo">Ver todo el catálogo <span>→</span></a>
+                </div>
+                <div class="rejilla-productos">
+                    <article class="tarjeta-producto">
+                        <div class="portada-producto portada-verde"><span>Cuardenos<br>Espiral</span><small>Artesanal</small></div>
+                        <div class="info-producto">
+                            <p class="categoria-producto">Cuaderno Espiral</p>
+                            <h3>Tamaño carta <br> cuadricula normal</h3>
+                            <p class="autor">Artesanal</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="portada-producto portada-coral"><span>Bolígrafos<br>Azul - Negro - Rojo</span><small>Sabonis</small></div>
+                        <div class="info-producto">
+                            <p class="categoria-producto">Bolígrafos</p>
+                            <h3>Bolígrafos de tinta</h3>
+                            <p class="autor">Sabonis</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="portada-producto portada-azul"><span>Pegamento<br>Carpicola Blanca</span><small>Monopol</small></div>
+                        <div class="info-producto">
+                            <p class="categoria-producto">Pegamento</p>
+                            <h3>Pegamento carpicola blanca</h3>
+                            <p class="autor">Monopol</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta-producto">
+                        <div class="portada-producto portada-amarilla"><span>Regalos<br>Muñecas Barbie</span><small>Coleccion</small></div>
+                        <div class="info-producto">
+                            <p class="categoria-producto">Regalos</p>
+                            <h3>Muñecas Barbie</h3>
+                            <p class="autor">Coleccion</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-categorias" id="categorias">
+            <div class="contenedor contenido-categorias">
+                <div><p class="etiqueta">Busca por categoría</p><h2>Un material para<br><em>cada momento.</em></h2></div>
+                <div class="lista-categorias"><a href="#catalogo">Regalos <span>↗</span></a><a href="#catalogo">Papel <span>↗</span></a><a href="#catalogo">Pegamentos <span>↗</span></a><a href="#catalogo">material escolar <span>↗</span></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-sitio" id="nosotros">
+        <div class="contenedor contenido-pie"><div><a class="marca" href="#inicio"><span class="marca-simbolo">L</span><span>Analy's<span class="marca-punto">.</span></span></a><p>Una buena historia siempre<br>encuentra su momento.</p></div><div class="nota-pie"><span>¿Necesitas una recomendación?</span><a href="mailto:hola@analy.test">hola@analy.test</a></div><p class="derechos">© 2026 Analy's Librería. Todos los derechos reservados.</p></div>
 </html>
