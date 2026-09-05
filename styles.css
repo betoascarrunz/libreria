@@ -317,6 +317,115 @@ h2 {
 	margin-bottom: 0;
 }
 
+.pagina-login {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.contenido-login {
+	flex: 1;
+	display: grid;
+	place-items: center;
+	padding: 55px 20px;
+	background: #eeeeee;
+}
+
+.tarjeta-login {
+	width: 100%;
+	max-width: 460px;
+	padding: 40px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+.tarjeta-login h1 {
+	margin-bottom: 10px;
+	font-size: 38px;
+}
+
+.descripcion-login {
+	margin-bottom: 30px;
+	color: #666666;
+}
+
+.formulario-login {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.grupo-campo {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.grupo-campo label {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.grupo-campo input[type="email"],
+.grupo-campo input[type="password"] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #aaaaaa;
+	font: inherit;
+}
+
+.grupo-campo input:focus {
+	border-color: #703b4b;
+	outline: 2px solid #f2c14e;
+	outline-offset: 1px;
+}
+
+.opciones-login {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	font-size: 13px;
+}
+
+.recordarme {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.opciones-login a,
+.registro-login a {
+	color: #703b4b;
+	font-weight: bold;
+}
+
+.boton-login {
+	width: 100%;
+	border: 0;
+	font: inherit;
+	cursor: pointer;
+}
+
+.boton-login:hover,
+.boton-login:focus-visible {
+	background: #512b37;
+}
+
+.registro-login {
+	margin: 25px 0 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+.pie-login {
+	padding: 22px 0;
+}
+
+.pie-login .contenido-pie {
+	align-items: center;
+}
+
 @media (max-width: 760px) {
 	.contenido-encabezado,
 	.encabezado-seccion,
@@ -351,5 +460,14 @@ h2 {
 
 	.contenido-categorias {
 		grid-template-columns: 1fr;
+	}
+
+	.tarjeta-login {
+		padding: 30px 22px;
+	}
+
+	.opciones-login {
+		align-items: flex-start;
+		flex-direction: column;
 	}
 }
