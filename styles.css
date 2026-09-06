@@ -426,7 +426,14 @@ h2 {
 	align-items: center;
 }
 
+.pagina-dashboard {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 .contenido-dashboard {
+	flex: 1;
 	padding: 45px 0 70px;
 	background: #eeeeee;
 }
@@ -800,7 +807,7 @@ h2 {
 
 .formulario-producto {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr auto;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
 	align-items: end;
 	gap: 15px;
 }
@@ -817,7 +824,9 @@ h2 {
 }
 
 .acciones-formulario {
+	grid-column: 1 / -1;
 	display: flex;
+	justify-content: flex-end;
 	gap: 8px;
 }
 
