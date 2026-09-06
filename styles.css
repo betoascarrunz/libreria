@@ -919,6 +919,81 @@ h2 {
 	grid-column: 1 / -1;
 }
 
+.contenido-pedidos {
+	padding-top: 45px;
+}
+
+.resumen-pedidos {
+	margin-bottom: 20px;
+}
+
+.resumen-pedidos .tarjeta-resumen {
+	min-height: 105px;
+}
+
+.barra-pedidos {
+	margin-bottom: 20px;
+}
+
+.tabla-pedidos table {
+	min-width: 980px;
+}
+
+.tabla-pedidos td {
+	white-space: nowrap;
+}
+
+.estado-cancelado {
+	background: #f4d9d5;
+	color: #91453d;
+}
+
+.registro-pedido {
+	margin-top: 20px;
+}
+
+.formulario-pedido {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	gap: 18px 15px;
+}
+
+.formulario-pedido .campo-producto input,
+.formulario-pedido .campo-producto select,
+.formulario-pedido .campo-producto textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+	background: #ffffff;
+	font: inherit;
+}
+
+.formulario-pedido .campo-producto textarea {
+	resize: vertical;
+}
+
+.formulario-pedido .campo-producto input:focus,
+.formulario-pedido .campo-producto select:focus,
+.formulario-pedido .campo-producto textarea:focus {
+	border-color: #703b4b;
+	outline: 2px solid #f2c14e;
+	outline-offset: 1px;
+}
+
+.formulario-pedido .campo-producto label span {
+	color: #777777;
+	font-weight: normal;
+}
+
+.campo-pedido-cliente {
+	grid-column: span 2;
+}
+
+.campo-pedido-observaciones,
+.formulario-pedido .acciones-formulario {
+	grid-column: 1 / -1;
+}
+
 @media (max-width: 760px) {
 	.contenido-encabezado,
 	.encabezado-seccion,
@@ -1001,6 +1076,15 @@ h2 {
 
 	.campo-venta-cliente,
 	.campo-venta-observaciones {
+		grid-column: auto;
+	}
+
+	.formulario-pedido {
+		grid-template-columns: 1fr;
+	}
+
+	.campo-pedido-cliente,
+	.campo-pedido-observaciones {
 		grid-column: auto;
 	}
 

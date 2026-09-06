@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Registro de pedidos de Analy's Librería.">
+	<link rel="stylesheet" href="styles.css">
+	<title>Registrar pedido | Analy's Librería</title>
+</head>
+<body class="pagina-dashboard">
+	<header class="encabezado-sitio">
+		<div class="contenedor contenido-encabezado">
+			<a class="marca" href="home.html" aria-label="Analy's, panel principal"><span class="marca-simbolo">A</span><span>Analy's<span class="marca-punto">.</span></span></a>
+			<nav class="navegacion-principal" aria-label="Navegación del usuario"><a href="home.html">Panel</a><a href="productos.html">Productos</a><a href="ventas.html">Ventas</a><a class="activo" href="pedidos.html" aria-current="page">Pedidos</a></nav>
+			<a class="enlace-login" href="login.html">Cerrar sesión</a>
+		</div>
+	</header>
+
+	<main class="contenido-dashboard contenido-productos">
+		<div class="contenedor">
+			<section class="encabezado-productos" aria-labelledby="titulo-registro-pedido">
+				<div><p class="etiqueta">Gestión de pedidos</p><h1 id="titulo-registro-pedido">Registrar pedido</h1><p>Ingresa la información del nuevo pedido.</p></div>
+				<a class="boton" href="pedidos.html">Volver a pedidos</a>
+			</section>
+
+			<section class="panel-dashboard registro-pedido" aria-labelledby="titulo-datos-pedido">
+				<div class="encabezado-panel"><div><p class="etiqueta">Nuevo registro</p><h2 id="titulo-datos-pedido">Datos del pedido</h2></div></div>
+				<form class="formulario-pedido" action="pedidos.html" method="get">
+					<div class="campo-producto campo-pedido-cliente"><label for="cliente-pedido">Cliente</label><input type="text" id="cliente-pedido" name="cliente" placeholder="Nombre del cliente o institución" required></div>
+					<div class="campo-producto"><label for="fecha-pedido">Fecha solicitada</label><input type="date" id="fecha-pedido" name="fecha" required></div>
+					<div class="campo-producto campo-pedido-producto"><label for="producto-pedido">Producto</label><select id="producto-pedido" name="producto" required><option value="">Seleccionar producto</option><option>Cuaderno espiral tamaño carta</option><option>Bolígrafos de tinta surtidos</option><option>Pegamento carpicola blanca</option><option>Lápices de color x12</option><option>Marcadores permanentes x6</option></select></div>
+					<div class="campo-producto"><label for="cantidad-pedido">Cantidad</label><input type="number" id="cantidad-pedido" name="cantidad" min="1" placeholder="1" required></div>
+					<div class="campo-producto"><label for="prioridad-pedido">Prioridad</label><select id="prioridad-pedido" name="prioridad" required><option value="">Seleccionar prioridad</option><option>Alta</option><option>Normal</option><option>Baja</option></select></div>
+					<div class="campo-producto"><label for="estado-pedido">Estado inicial</label><select id="estado-pedido" name="estado" required><option value="">Seleccionar estado</option><option>Pendiente</option><option>Atendido</option></select></div>
+					<div class="campo-producto campo-pedido-observaciones"><label for="observaciones-pedido">Observaciones <span>(opcional)</span></label><textarea id="observaciones-pedido" name="observaciones" rows="4" placeholder="Añade detalles o indicaciones del pedido"></textarea></div>
+					<div class="acciones-formulario"><button class="boton" type="submit">Guardar pedido</button><button class="boton boton-cancelar" type="reset">Limpiar</button></div>
+				</form>
+			</section>
+		</div>
+	</main>
+
+	<footer class="pie-sitio pie-dashboard"><div class="contenedor contenido-pie"><p class="derechos">© 2026 Analy's Librería. Todos los derechos reservados.</p><a class="enlace-texto" href="home.html">Volver al panel</a></div></footer>
+</body>
+</html>
