@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Lista y registro de materiales escolares de Analy's Librería.">
+	<link rel="stylesheet" href="styles.css">
+	<title>Productos | Analy's Librería</title>
+</head>
+<body class="pagina-dashboard">
+	<header class="encabezado-sitio">
+		<div class="contenedor contenido-encabezado">
+			<a class="marca" href="home.html" aria-label="Analy's, panel principal">
+				<span class="marca-simbolo">A</span>
+				<span>Analy's<span class="marca-punto">.</span></span>
+			</a>
+			<nav class="navegacion-principal" aria-label="Navegación del usuario">
+				<a href="home.html">Panel</a>
+				<a class="activo" href="productos.html" aria-current="page">Productos</a>
+				<a href="index.html#categorias">Categorías</a>
+			</nav>
+			<a class="enlace-login" href="login.html">Cerrar sesión</a>
+		</div>
+	</header>
+
+	<main class="contenido-dashboard contenido-productos">
+		<div class="contenedor">
+			<section class="encabezado-productos" aria-labelledby="titulo-productos">
+				<div>
+					<p class="etiqueta">Gestión de inventario</p>
+					<h1 id="titulo-productos">Materiales escolares.</h1>
+					<p>Administra los productos disponibles en tu librería.</p>
+				</div>
+				<a class="boton" href="registro-producto.html">+ Registrar nuevo producto</a>
+			</section>
+
+			<section class="barra-productos" aria-label="Filtros de productos">
+				<label class="buscador-productos" for="buscar-producto">
+					<span aria-hidden="true">⌕</span>
+					<input type="search" id="buscar-producto" placeholder="Buscar por nombre o categoría">
+				</label>
+				<label class="filtro-productos" for="filtro-categoria">
+					<span>Categoría</span>
+					<select id="filtro-categoria" name="categoria">
+						<option>Todos los materiales</option>
+						<option>Cuadernos</option>
+						<option>Escritura</option>
+						<option>Pegamentos</option>
+						<option>Arte</option>
+					</select>
+				</label>
+			</section>
+
+			<section class="panel-dashboard tabla-productos" aria-labelledby="titulo-lista-productos">
+				<div class="encabezado-panel">
+					<div><p class="etiqueta">Inventario actual</p><h2 id="titulo-lista-productos">Lista de productos</h2></div>
+					<span class="contador-productos">8 productos</span>
+				</div>
+				<div class="tabla-contenedor">
+					<table>
+						<thead>
+							<tr><th>Producto</th><th>Categoría</th><th>Precio</th><th>Stock</th><th>Estado</th><th><span class="solo-lectura">Acciones</span></th></tr>
+						</thead>
+						<tbody>
+							<tr><td><strong>Cuaderno espiral tamaño carta</strong><small>Artesanal · Código CU-001</small></td><td>Cuadernos</td><td>Bs. 45.00</td><td>32</td><td><span class="estado estado-enviado">Disponible</span></td><td><a class="accion-producto" href="#registro-producto">Editar</a></td></tr>
+							<tr><td><strong>Bolígrafos de tinta surtidos</strong><small>Sabonis · Código BO-002</small></td><td>Escritura</td><td>Bs. 28.50</td><td>48</td><td><span class="estado estado-enviado">Disponible</span></td><td><a class="accion-producto" href="#registro-producto">Editar</a></td></tr>
+							<tr><td><strong>Pegamento carpicola blanca</strong><small>Monopol · Código PE-003</small></td><td>Pegamentos</td><td>Bs. 16.00</td><td>7</td><td><span class="estado estado-preparando">Stock bajo</span></td><td><a class="accion-producto" href="#registro-producto">Editar</a></td></tr>
+							<tr><td><strong>Lápices de color x12</strong><small>Faber-Castell · Código AR-004</small></td><td>Arte</td><td>Bs. 35.00</td><td>25</td><td><span class="estado estado-enviado">Disponible</span></td><td><a class="accion-producto" href="#registro-producto">Editar</a></td></tr>
+							<tr><td><strong>Marcadores permanentes x6</strong><small>Pelikan · Código ES-005</small></td><td>Escritura</td><td>Bs. 42.00</td><td>0</td><td><span class="estado estado-agotado">Agotado</span></td><td><a class="accion-producto" href="#registro-producto">Editar</a></td></tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="pie-sitio pie-dashboard"><div class="contenedor contenido-pie"><p class="derechos">© 2026 Analy's Librería. Todos los derechos reservados.</p><a class="enlace-texto" href="home.html">Volver al panel</a></div></footer>
+</body>
+</html>
