@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Panel de usuario de Librería Analy's.">
+	<link rel="stylesheet" href="styles.css">
+	<title>Mi cuenta | Analy's Librería</title>
+</head>
+<body class="pagina-dashboard">
+	<header class="encabezado-sitio">
+		<div class="contenedor contenido-encabezado">
+			<a class="marca" href="home.html" aria-label="Analy's, panel principal">
+				<span class="marca-simbolo">A</span>
+				<span>Analy's<span class="marca-punto">.</span></span>
+			</a>
+			<nav class="navegacion-principal" aria-label="Navegación del usuario">
+				<a class="activo" href="home.html" aria-current="page">Panel</a>
+				<a href="index.html#catalogo">Catálogo</a>
+				<a href="index.html#categorias">Categorías</a>
+			</nav>
+			<a class="enlace-login" href="login.html">Cerrar sesión</a>
+		</div>
+	</header>
+
+	<main class="contenido-dashboard">
+		<div class="contenedor">
+			<section class="bienvenida-dashboard" aria-labelledby="titulo-dashboard">
+				<div>
+					<p class="etiqueta">Panel personal</p>
+					<h1 id="titulo-dashboard">Hola, Roberto.</h1>
+					<p>Este es el resumen de tu actividad en Analy's Librería.</p>
+				</div>
+				<a class="boton" href="index.html#catalogo">Explorar catálogo</a>
+			</section>
+
+			<section class="resumen-dashboard" aria-label="Resumen de la cuenta">
+				<article class="tarjeta-resumen tarjeta-resumen-destacada">
+					<span class="icono-resumen" aria-hidden="true">◷</span>
+					<div><p>Productos</p><strong>2</strong></div>
+					<a href="#pedidos">Ver productos <span aria-hidden="true">→</span></a>
+				</article>
+				<article class="tarjeta-resumen">
+					<span class="icono-resumen" aria-hidden="true">✓</span>
+					<div><p>Ventas de productos</p><strong>8</strong></div>
+					<a href="#actividad">Ver ventas <span aria-hidden="true">→</span></a>
+				</article>
+				<article class="tarjeta-resumen">
+					<span class="icono-resumen" aria-hidden="true">♡</span>
+					<div><p>Registro de Pedidos</p><strong>6</strong></div>
+					<a href="#favoritos">Ver pedidos <span aria-hidden="true">→</span></a>
+				</article>
+			</section>
+
+			<div class="rejilla-dashboard">
+				<section class="panel-dashboard panel-pedidos" id="pedidos" aria-labelledby="titulo-pedidos">
+					<div class="encabezado-panel">
+						<div><p class="etiqueta">Seguimiento</p><h2 id="titulo-pedidos">Ventas recientes</h2></div>
+						<a class="enlace-texto" href="#pedidos">Ver todos</a>
+					</div>
+					<div class="pedido">
+						<div><strong>#AN-2026-024</strong><p>Realizado el 28 de agosto de 2026</p></div>
+						<span class="estado estado-preparando">Efectivo</span>
+						<strong>Bs. 185.00</strong>
+					</div>
+					<div class="pedido">
+						<div><strong>#AN-2026-018</strong><p>Realizado el 20 de agosto de 2026</p></div>
+						<span class="estado estado-enviado">QR</span>
+						<strong>Bs. 320.50</strong>
+					</div>
+				</section>
+
+				<aside class="panel-dashboard panel-perfil" aria-labelledby="titulo-perfil">
+					<div class="avatar-usuario" aria-hidden="true">R</div>
+					<p class="etiqueta">Mi cuenta</p>
+					<h2 id="titulo-perfil">Roberto Ascarrunz</h2>
+					<p class="correo-usuario">roberto.ascarrunz@email.com</p>
+					<a class="boton boton-secundario" href="mailto:hola@analy.test?subject=Actualizar%20mis%20datos">Editar perfil</a>
+				</aside>
+
+				<section class="panel-dashboard panel-favoritos" id="favoritos" aria-labelledby="titulo-favoritos">
+					<div class="encabezado-panel"><h2 id="titulo-favoritos">últimas compras</h2><a class="enlace-texto" href="index.html#catalogo">Ver catálogo</a></div>
+					<div class="favoritos-lista">
+						<div class="favorito-item"><span class="mini-portada mini-portada-verde">Cuaderno</span><div><strong>Cuaderno espiral</strong><p>Artesanal</p></div><span class="precio">Bs. 45.00</span></div>
+						<div class="favorito-item"><span class="mini-portada mini-portada-coral">Bolígrafos</span><div><strong>Set de bolígrafos</strong><p>Sabonis</p></div><span class="precio">Bs. 28.50</span></div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<footer class="pie-sitio pie-dashboard">
+		<div class="contenedor contenido-pie">
+			<p class="derechos">© 2026 Analy's Librería. Todos los derechos reservados.</p>
+			<a class="enlace-texto" href="index.html">Volver a la tienda</a>
+		</div>
+	</footer>
+</body>
+</html>
