@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Listado de ventas de Analy's Librería.">
+	<link rel="stylesheet" href="styles.css">
+	<title>Ventas | Analy's Librería</title>
+</head>
+<body class="pagina-dashboard">
+	<header class="encabezado-sitio">
+		<div class="contenedor contenido-encabezado">
+			<a class="marca" href="home.html" aria-label="Analy's, panel principal">
+				<span class="marca-simbolo">A</span>
+				<span>Analy's<span class="marca-punto">.</span></span>
+			</a>
+			<nav class="navegacion-principal" aria-label="Navegación del usuario">
+				<a href="home.html">Panel</a>
+				<a href="productos.html">Productos</a>
+				<a class="activo" href="ventas.html" aria-current="page">Ventas</a>
+			</nav>
+			<a class="enlace-login" href="login.html">Cerrar sesión</a>
+		</div>
+	</header>
+
+	<main class="contenido-dashboard contenido-ventas">
+		<div class="contenedor">
+			<section class="encabezado-productos" aria-labelledby="titulo-ventas">
+				<div>
+					<p class="etiqueta">Gestión comercial</p>
+					<h1 id="titulo-ventas">Ventas realizadas.</h1>
+					<p>Consulta el historial de ventas registradas en la librería.</p>
+				</div>
+				<a class="boton" href="registro-venta.html">+ Registrar nueva venta</a>
+			</section>
+
+			<section class="resumen-dashboard resumen-ventas" aria-label="Resumen de ventas">
+				<article class="tarjeta-resumen tarjeta-resumen-destacada"><span class="icono-resumen" aria-hidden="true">$</span><div><p>Ventas del mes</p><strong>24</strong></div></article>
+				<article class="tarjeta-resumen"><span class="icono-resumen" aria-hidden="true">↗</span><div><p>Ingresos del mes</p><strong>Bs. 4,850</strong></div></article>
+				<article class="tarjeta-resumen"><span class="icono-resumen" aria-hidden="true">✓</span><div><p>Ticket promedio</p><strong>Bs. 202</strong></div></article>
+			</section>
+
+			<section class="barra-productos barra-ventas" aria-label="Filtros de ventas">
+				<label class="buscador-productos" for="buscar-venta"><span aria-hidden="true">⌕</span><input type="search" id="buscar-venta" placeholder="Buscar por cliente o número de venta"></label>
+				<label class="filtro-productos" for="filtro-pago"><span>Pago</span><select id="filtro-pago" name="pago"><option>Todos los métodos</option><option>Efectivo</option><option>QR</option><option>Tarjeta</option></select></label>
+			</section>
+
+			<section class="panel-dashboard tabla-productos tabla-ventas" aria-labelledby="titulo-lista-ventas">
+				<div class="encabezado-panel"><div><p class="etiqueta">Historial completo</p><h2 id="titulo-lista-ventas">Lista de ventas</h2></div><span class="contador-productos">8 ventas registradas</span></div>
+				<div class="tabla-contenedor">
+					<table>
+						<thead><tr><th>N.º de venta</th><th>Cliente</th><th>Fecha</th><th>Productos</th><th>Pago</th><th>Total</th><th>Estado</th></tr></thead>
+						<tbody>
+							<tr><td><strong>#AN-2026-024</strong></td><td>María Fernández</td><td>28/08/2026</td><td>3 productos</td><td>Efectivo</td><td><strong>Bs. 185.00</strong></td><td><span class="estado estado-enviado">Completada</span></td></tr>
+							<tr><td><strong>#AN-2026-023</strong></td><td>Jorge Salvatierra</td><td>27/08/2026</td><td>5 productos</td><td>QR</td><td><strong>Bs. 420.00</strong></td><td><span class="estado estado-enviado">Completada</span></td></tr>
+							<tr><td><strong>#AN-2026-022</strong></td><td>Lucía Mendoza</td><td>26/08/2026</td><td>2 productos</td><td>Tarjeta</td><td><strong>Bs. 96.50</strong></td><td><span class="estado estado-enviado">Completada</span></td></tr>
+							<tr><td><strong>#AN-2026-021</strong></td><td>Colegio San Pablo</td><td>25/08/2026</td><td>12 productos</td><td>QR</td><td><strong>Bs. 850.00</strong></td><td><span class="estado estado-preparando">Pendiente</span></td></tr>
+							<tr><td><strong>#AN-2026-020</strong></td><td>Pedro Ramírez</td><td>23/08/2026</td><td>4 productos</td><td>Efectivo</td><td><strong>Bs. 210.00</strong></td><td><span class="estado estado-enviado">Completada</span></td></tr>
+							<tr><td><strong>#AN-2026-019</strong></td><td>Ana Flores</td><td>22/08/2026</td><td>1 producto</td><td>Efectivo</td><td><strong>Bs. 35.00</strong></td><td><span class="estado estado-enviado">Completada</span></td></tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="pie-sitio pie-dashboard"><div class="contenedor contenido-pie"><p class="derechos">© 2026 Analy's Librería. Todos los derechos reservados.</p><a class="enlace-texto" href="home.html">Volver al panel</a></div></footer>
+</body>
+</html>

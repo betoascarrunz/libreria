@@ -846,6 +846,79 @@ h2 {
 	background: #dddddd;
 }
 
+.contenido-ventas {
+	padding-top: 45px;
+}
+
+.resumen-ventas {
+	margin-bottom: 20px;
+}
+
+.resumen-ventas .tarjeta-resumen {
+	min-height: 105px;
+}
+
+.barra-ventas {
+	margin-bottom: 20px;
+}
+
+.tabla-ventas table {
+	min-width: 980px;
+}
+
+.tabla-ventas td {
+	white-space: nowrap;
+}
+
+.registro-venta {
+	margin-top: 20px;
+}
+
+.formulario-venta {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	gap: 18px 15px;
+}
+
+.formulario-venta .campo-producto input,
+.formulario-venta .campo-producto select,
+.formulario-venta .campo-producto textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+	background: #ffffff;
+	font: inherit;
+}
+
+.formulario-venta .campo-producto textarea {
+	resize: vertical;
+}
+
+.formulario-venta .campo-producto input:focus,
+.formulario-venta .campo-producto select:focus,
+.formulario-venta .campo-producto textarea:focus {
+	border-color: #703b4b;
+	outline: 2px solid #f2c14e;
+	outline-offset: 1px;
+}
+
+.formulario-venta .campo-producto label span {
+	color: #777777;
+	font-weight: normal;
+}
+
+.campo-venta-cliente {
+	grid-column: span 2;
+}
+
+.campo-venta-observaciones {
+	grid-column: 1 / -1;
+}
+
+.formulario-venta .acciones-formulario {
+	grid-column: 1 / -1;
+}
+
 @media (max-width: 760px) {
 	.contenido-encabezado,
 	.encabezado-seccion,
@@ -920,6 +993,15 @@ h2 {
 
 	.formulario-producto {
 		grid-template-columns: 1fr;
+	}
+
+	.formulario-venta {
+		grid-template-columns: 1fr;
+	}
+
+	.campo-venta-cliente,
+	.campo-venta-observaciones {
+		grid-column: auto;
 	}
 
 	.acciones-formulario {

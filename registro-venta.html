@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Registro de una nueva venta en Analy's Librería.">
+	<link rel="stylesheet" href="styles.css">
+	<title>Registrar venta | Analy's Librería</title>
+</head>
+<body class="pagina-dashboard">
+	<header class="encabezado-sitio">
+		<div class="contenedor contenido-encabezado">
+			<a class="marca" href="home.html" aria-label="Analy's, panel principal"><span class="marca-simbolo">A</span><span>Analy's<span class="marca-punto">.</span></span></a>
+			<nav class="navegacion-principal" aria-label="Navegación del usuario"><a href="home.html">Panel</a><a href="productos.html">Productos</a><a class="activo" href="ventas.html" aria-current="page">Ventas</a></nav>
+			<a class="enlace-login" href="login.html">Cerrar sesión</a>
+		</div>
+	</header>
+
+	<main class="contenido-dashboard contenido-productos">
+		<div class="contenedor">
+			<section class="encabezado-productos" aria-labelledby="titulo-registro-venta">
+				<div><p class="etiqueta">Gestión comercial</p><h1 id="titulo-registro-venta">Registrar venta</h1><p>Ingresa los datos de la venta realizada.</p></div>
+				<a class="boton" href="ventas.html">Volver a ventas</a>
+			</section>
+
+			<section class="panel-dashboard registro-venta" aria-labelledby="titulo-datos-venta">
+				<div class="encabezado-panel"><div><p class="etiqueta">Nuevo registro</p><h2 id="titulo-datos-venta">Datos de la venta</h2></div></div>
+				<form class="formulario-venta" action="ventas.html" method="get">
+					<div class="campo-producto campo-venta-cliente"><label for="cliente-venta">Cliente</label><input type="text" id="cliente-venta" name="cliente" placeholder="Nombre del cliente" required></div>
+					<div class="campo-producto"><label for="fecha-venta">Fecha</label><input type="date" id="fecha-venta" name="fecha" required></div>
+					<div class="campo-producto"><label for="producto-venta">Producto</label><select id="producto-venta" name="producto" required><option value="">Seleccionar producto</option><option>Cuaderno espiral tamaño carta</option><option>Bolígrafos de tinta surtidos</option><option>Pegamento carpicola blanca</option><option>Lápices de color x12</option><option>Marcadores permanentes x6</option></select></div>
+					<div class="campo-producto"><label for="cantidad-venta">Cantidad</label><input type="number" id="cantidad-venta" name="cantidad" min="1" placeholder="1" required></div>
+					<div class="campo-producto"><label for="pago-venta">Método de pago</label><select id="pago-venta" name="pago" required><option value="">Seleccionar método</option><option>Efectivo</option><option>QR</option><option>Tarjeta</option></select></div>
+					<div class="campo-producto"><label for="total-venta">Total (Bs.)</label><input type="number" id="total-venta" name="total" min="0" step="0.01" placeholder="0.00" required></div>
+					<div class="campo-producto campo-venta-observaciones"><label for="observaciones-venta">Observaciones <span>(opcional)</span></label><textarea id="observaciones-venta" name="observaciones" rows="4" placeholder="Añade alguna nota sobre la venta"></textarea></div>
+					<div class="acciones-formulario"><button class="boton" type="submit">Guardar venta</button><button class="boton boton-cancelar" type="reset">Limpiar</button></div>
+				</form>
+			</section>
+		</div>
+	</main>
+
+	<footer class="pie-sitio pie-dashboard"><div class="contenedor contenido-pie"><p class="derechos">© 2026 Analy's Librería. Todos los derechos reservados.</p><a class="enlace-texto" href="home.html">Volver al panel</a></div></footer>
+</body>
+</html>
